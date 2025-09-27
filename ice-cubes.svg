@@ -1,0 +1,30 @@
+<!-- This file will be replaced with actual images -->
+<!-- Placeholder for ice-cubes.png -->
+<svg width="300" height="300" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="iceGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#E6F3FF;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#B8E6FF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#87CEEB;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  
+  <!-- Ice cubes -->
+  <rect x="50" y="50" width="80" height="80" rx="10" fill="url(#iceGradient)" filter="url(#shadow)" opacity="0.9"/>
+  <rect x="170" y="80" width="80" height="80" rx="10" fill="url(#iceGradient)" filter="url(#shadow)" opacity="0.8"/>
+  <rect x="90" y="150" width="80" height="80" rx="10" fill="url(#iceGradient)" filter="url(#shadow)" opacity="0.9"/>
+  <rect x="200" y="180" width="60" height="60" rx="8" fill="url(#iceGradient)" filter="url(#shadow)" opacity="0.7"/>
+  
+  <!-- Ice crystals effect -->
+  <circle cx="100" cy="90" r="3" fill="white" opacity="0.8"/>
+  <circle cx="210" cy="120" r="2" fill="white" opacity="0.9"/>
+  <circle cx="130" cy="190" r="2.5" fill="white" opacity="0.8"/>
+  <circle cx="230" cy="210" r="2" fill="white" opacity="0.9"/>
+  
+  <!-- Sparkle effects -->
+  <polygon points="120,70 122,75 127,75 123,78 125,83 120,80 115,83 117,78 113,75 118,75" fill="white" opacity="0.6"/>
+  <polygon points="190,140 192,145 197,145 193,148 195,153 190,150 185,153 187,148 183,145 188,145" fill="white" opacity="0.5"/>
+</svg>
