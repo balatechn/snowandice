@@ -2,7 +2,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     // Initialize all functionality
     initializeNavigation();
-    initializeTestimonialCarousel();
     initializeContactForm();
     initializeScrollAnimations();
     initializeFloatingNav();
@@ -52,50 +51,6 @@ function updateActiveNavItem(activeItem) {
     activeItem.classList.add('active');
 }
 
-// Testimonial carousel functionality
-function initializeTestimonialCarousel() {
-    const testimonialCards = document.querySelectorAll('.testimonial-card');
-    const dots = document.querySelectorAll('.dot');
-    const prevBtn = document.querySelector('.carousel-btn.prev');
-    const nextBtn = document.querySelector('.carousel-btn.next');
-    
-    if (testimonialCards.length === 0) return;
-    
-    let currentSlide = 0;
-    
-    function showSlide(index) {
-        testimonialCards.forEach((card, i) => {
-            card.classList.toggle('active', i === index);
-        });
-        
-        dots.forEach((dot, i) => {
-            dot.classList.toggle('active', i === index);
-        });
-        
-        currentSlide = index;
-    }
-    
-    function nextSlide() {
-        const next = (currentSlide + 1) % testimonialCards.length;
-        showSlide(next);
-    }
-    
-    function prevSlide() {
-        const prev = (currentSlide - 1 + testimonialCards.length) % testimonialCards.length;
-        showSlide(prev);
-    }
-    
-    // Event listeners
-    if (nextBtn) nextBtn.addEventListener('click', nextSlide);
-    if (prevBtn) prevBtn.addEventListener('click', prevSlide);
-    
-    dots.forEach((dot, index) => {
-        dot.addEventListener('click', () => showSlide(index));
-    });
-    
-    // Auto-play carousel
-    setInterval(nextSlide, 5000);
-}
 
 // Contact form handling
 function initializeContactForm() {
@@ -196,7 +151,7 @@ function initializeScrollAnimations() {
 
     // Observe elements for animation
     const animateElements = document.querySelectorAll(
-        '.product-card, .testimonial-card, .story-card, .contact-card, .feature-item, .gallery-item'
+        '.product-card, .story-card, .contact-card, .feature-item, .gallery-item'
     );
     
     animateElements.forEach(el => {
