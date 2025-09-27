@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # SnowandIce - Premium Ice Machine Solutions
 
 A modern, responsive website for SnowandIce, featuring premium ice machine solutions with an elegant ice-blue gradient design theme.
@@ -161,3 +162,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ---
 
 **SnowandIce** - *Premium Ice Solutions for Professional Excellence*
+=======
+# snowandice
+>>>>>>> 212d02e69ba4c32da8b1596c549a8f447108b883
